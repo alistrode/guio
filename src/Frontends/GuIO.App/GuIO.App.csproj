@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- GUI 前端（Avalonia，跨平台一套界面）：设备面板 / 实时画面 / 元素列表 /
+       点击与输入 / 流程运行 / 遥测日志。纯代码构建 UI，无 XAML 依赖。 -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <RootNamespace>GuIO.App</RootNamespace>
+    <AssemblyName>guio-app</AssemblyName>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>../../../assets/guio.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.2.1" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.2.1" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.2.1" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Service\GuIO.Service.csproj" />
+    <ProjectReference Include="..\..\Drivers\GuIO.Driver.Windows\GuIO.Driver.Windows.csproj" />
+  </ItemGroup>
+
+</Project>

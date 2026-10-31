@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- 语音层：音频转文字。复用本地 Whisper（无需重新下载模型）。跨平台契约。 -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>GuIO.Speech</RootNamespace>
+    <AssemblyName>GuIO.Speech</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\GuIO.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

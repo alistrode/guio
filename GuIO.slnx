@@ -1,0 +1,34 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Agents/">
+    <Project Path="src/Agents/GuIO.Agent.Android/GuIO.Agent.Android.csproj" />
+    <Project Path="src/Agents/GuIO.Agent.Windows/GuIO.Agent.Windows.csproj" />
+  </Folder>
+  <Folder Name="/src/Contracts/">
+    <Project Path="src/Contracts/GuIO.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Drivers/">
+    <Project Path="src/Drivers/GuIO.Driver.Android/GuIO.Driver.Android.csproj" />
+    <Project Path="src/Drivers/GuIO.Driver.Windows/GuIO.Driver.Windows.csproj" />
+  </Folder>
+  <Folder Name="/src/Frontends/">
+    <Project Path="src/Frontends/GuIO.App/GuIO.App.csproj" />
+    <Project Path="src/Frontends/GuIO.Cli/GuIO.Cli.csproj" />
+    <Project Path="src/Frontends/GuIO.Mcp/GuIO.Mcp.csproj" />
+  </Folder>
+  <Folder Name="/src/Kernel/">
+    <Project Path="src/Kernel/GuIO.Kernel.csproj" />
+  </Folder>
+  <Folder Name="/src/Service/">
+    <Project Path="src/Service/GuIO.Service.csproj" />
+  </Folder>
+  <Folder Name="/src/Transport/">
+    <Project Path="src/Transport/GuIO.Transport.csproj" />
+  </Folder>
+  <Folder Name="/src/Vision/">
+    <Project Path="src/Vision/GuIO.Vision.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/GuIO.Tests/GuIO.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- 传输层：只负责搬字节，不含业务。本机 IPC + 跨机 WebSocket + 三通道多路复用。 -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>GuIO.Transport</RootNamespace>
+    <AssemblyName>GuIO.Transport</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\GuIO.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- 内核：会话 / 闭环 / 能力协商 / 降级解算 / 遥测 / 流程 / 调度。
+       平台无关，禁止引用任何平台 API 或具体驱动。 -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>GuIO.Kernel</RootNamespace>
+    <AssemblyName>GuIO.Kernel</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\GuIO.Contracts.csproj" />
+    <ProjectReference Include="..\Vision\GuIO.Vision.csproj" />
+  </ItemGroup>
+
+</Project>

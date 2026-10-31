@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Android 驱动：端侧自足。唯一接触 Android 平台 API 的地方。
+       无障碍读树/手势/输入、AudioManager 音量。复用同一套 Contracts 与 Vision。 -->
+  <PropertyGroup>
+    <TargetFramework>net10.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>26</SupportedOSPlatformVersion>
+    <RootNamespace>GuIO.Driver.Android</RootNamespace>
+    <AssemblyName>GuIO.Driver.Android</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contracts\GuIO.Contracts.csproj" />
+    <ProjectReference Include="..\..\Vision\GuIO.Vision.csproj" />
+  </ItemGroup>
+
+</Project>

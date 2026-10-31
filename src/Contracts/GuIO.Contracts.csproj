@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- 契约层：纯数据结构，零依赖，桌面与手机共用。禁止引用任何平台 API。 -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>GuIO.Contracts</RootNamespace>
+    <AssemblyName>GuIO.Contracts</AssemblyName>
+  </PropertyGroup>
+
+</Project>

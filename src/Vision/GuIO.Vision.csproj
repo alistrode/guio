@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- 视觉层：纯托管、跨平台，桌面与手机共用同一份算法。禁止引用平台 API。 -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>GuIO.Vision</RootNamespace>
+    <AssemblyName>GuIO.Vision</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\GuIO.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

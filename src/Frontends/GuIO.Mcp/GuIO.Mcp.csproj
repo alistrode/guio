@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- MCP 前端：把统一动作表映射为 MCP 工具，供任意 LLM Agent 调用。
+       stdio JSON-RPC 2.0，遵循 Model Context Protocol 2024-11 规范的核心子集。 -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <RootNamespace>GuIO.Mcp</RootNamespace>
+    <AssemblyName>guio-mcp</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Service\GuIO.Service.csproj" />
+    <ProjectReference Include="..\..\Drivers\GuIO.Driver.Windows\GuIO.Driver.Windows.csproj" />
+  </ItemGroup>
+
+</Project>

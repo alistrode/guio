@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Windows 宿主（组装根）：把驱动、内核、服务接起来，常驻运行。
+       既能作为守护进程被 CLI 调用，也能直接内嵌执行。发布为单文件 exe。 -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <RootNamespace>GuIO.Agent.Windows</RootNamespace>
+    <AssemblyName>guio-agent</AssemblyName>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <ApplicationIcon>../../../assets/guio.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Service\GuIO.Service.csproj" />
+    <ProjectReference Include="..\..\Drivers\GuIO.Driver.Windows\GuIO.Driver.Windows.csproj" />
+  </ItemGroup>
+
+</Project>

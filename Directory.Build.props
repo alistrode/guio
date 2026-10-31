@@ -1,0 +1,17 @@
+<Project>
+
+  <!-- GuIO 统一构建约定：单一职责、跨平台库与平台宿主分离 -->
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <NeutralLanguage>zh-CN</NeutralLanguage>
+    <Product>GuIO</Product>
+    <Company>GuIO</Company>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+
+</Project>

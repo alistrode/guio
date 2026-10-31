@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Android 宿主 App（组装根）：端侧自足。
+       无障碍服务 + 前台服务 + 本地 RPC + 简单控制界面。
+       复用同一套 Service/Kernel/Transport；只多一个 Android 驱动。 -->
+  <PropertyGroup>
+    <TargetFramework>net10.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>26</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GuIO.Agent.Android</RootNamespace>
+    <AssemblyName>GuIO.Agent.Android</AssemblyName>
+    <ApplicationId>com.guio.agent</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12.0</LangVersion>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Service\GuIO.Service.csproj" />
+    <ProjectReference Include="..\..\Drivers\GuIO.Driver.Android\GuIO.Driver.Android.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidResource Include="Resources\**\*" />
+  </ItemGroup>
+
+</Project>

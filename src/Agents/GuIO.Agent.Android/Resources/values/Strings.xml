@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">GuIO</string>
+  <string name="guio_accessibility_desc">GuIO 通用自动化服务：读取界面结构、执行点击与手势、输入文本。</string>
+</resources>

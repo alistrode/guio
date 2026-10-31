@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- 服务层：设备管理 + RPC 分发（前后端分离的「后端」核心，平台无关）。
+       前端（CLI/MCP/GUI/遥控）只通过它与引擎对话。 -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>GuIO.Service</RootNamespace>
+    <AssemblyName>GuIO.Service</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\GuIO.Contracts.csproj" />
+    <ProjectReference Include="..\Kernel\GuIO.Kernel.csproj" />
+    <ProjectReference Include="..\Vision\GuIO.Vision.csproj" />
+    <ProjectReference Include="..\Speech\GuIO.Speech.csproj" />
+    <ProjectReference Include="..\Transport\GuIO.Transport.csproj" />
+  </ItemGroup>
+
+</Project>
